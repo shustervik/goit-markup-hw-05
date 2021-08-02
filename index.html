@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +18,7 @@
             <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
 
             <ul class="site-nav">
-                <li class="item active"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="item"><a href="./index.html" class="link current">Студия</a></li>
                 <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="item"><a href="" class="link">Контакты</a></li>
             </ul>
@@ -46,7 +45,7 @@
         <div class="overlay">
         <section class="hero">
             <h1 class="hero-title">эффективные решения <br>для вашего бизнеса</h1>
-            <button type="button" class="btn">
+            <button type="button" class="btn" data-modal-open>
                 Заказать услугу
             </button>
         </section>
@@ -104,24 +103,30 @@
         <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="work">
-                <div class="thumb">
-                <li class="item"><img src="./images/box1.jpg" alt="программирование на планшете" width="370"></li>
-                <div class="label">
+                <li class="item">
+                    <div class="thumb">
+                    <img src="./images/box1.jpg" alt="программирование на планшете" width="370">
+                    <div class="label">
                     <p>десктопные приложения</p>
-                </div>
-                </div>
-                <div class="thumb">
-                <li class="item"><img src="./images/box2.jpg" alt="приложение для смартфона" width="370"></li>
-                <div class="label">
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="thumb">
+                    <img src="./images/box2.jpg" alt="приложение для смартфона" width="370">
+                    <div class="label">
                     <p>мобильные приложения</p>
-                </div>
-                </div>
-                <div class="thumb">
-                <li class="item"><img src="./images/box3.jpg" alt="цветовая палитра" width="370"></li>
-                <div class="label">
+                    </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="thumb">
+                    <img src="./images/box3.jpg" alt="цветовая палитра" width="370">
+                    <div class="label">
                     <p>дизайнерские решения</p>
-                </div>
-                </div>
+                    </div>
+                    </div>
+                </li>
             </ul>
         </div>
         </section>
@@ -382,15 +387,15 @@
         </div>
     </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-        <button type="button" class="close">
+        <button type="button" class="close" data-modal-close>
             <svg class="close-icon" width="18" height="18">
                 <use href="./images/icons.svg#close-black"></use>
             </svg>
         </button>
         </div>
     </div>
+<script src="./js/modal.js"></script>
 </body>
-
 </html>
